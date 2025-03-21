@@ -12,10 +12,10 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="p-3 flex bg-white justify-between items-center">
+    <nav class="p-3 flex bg-white justify-between items-center ">
 
       <!-- logo -->
-      <a href="#" id="brand" class="flex gap-2 items-center">
+      <a href="#" id="brand" class="flex gap-2 items-center ">
         <img
           class="object-cover max-w-12 max-h-12"
           src="./assets/asset 0.png"
@@ -25,7 +25,7 @@
       </a>
 
       <!-- Starting of navMenu -->
-      <div id="nav-menu" class="hidden lg:flex gap-12">
+      <div id="nav-menu" class="hidden lg:flex gap-12 ">
         <a href="#" class="font-medium hover:text-primary">Pricing</a>
         <a href="#" class="font-medium hover:text-primary">Docs</a>
         <a href="#" class="font-medium hover:text-primary">Changelog</a>
@@ -34,14 +34,14 @@
       </div>
 
       <!-- right button -->
-      <button
-        class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600"
-      >
+       <div class="hidden lg:flex  justify-end">
+        <button class="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 ">
         <img src="./assets/asset 1.svg" alt="" />
         <span>Electron Developers</span>
         <i class="fa-solid fa-arrow-right"></i>
       </button>
-
+</div>
+      
       <!-- hidden menu -->
       <button class="p-2 lg:hidden" onclick="handleMenu()">
         <i class="fa-solid fa-bars text-gray-600"></i>
@@ -108,7 +108,7 @@
      <main>
       <!-- hero-section -->
        <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
-        <div id="hero-container" class="max-w-4xl mx-auto px-6 pb-32 flex flex-col">
+        <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center">
           <div id="version-text" class="flex items-center my-6 gap-2 border border-yellow-300 
           bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group ">
             <!-- yellow-dot -->
@@ -116,6 +116,17 @@
             <p class="font-display font-medium text-yellow-600">v0.21.1: <span class="text-yellow-800">Find-in-page bug fixes</span></p>
             <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
           </div>
+          <!-- hero-text -->
+          <h1 class="text-4xl font-semibold leading-snug mt-4 sm:text-5xl sm:leading-normal">Web app to desktop app in minutes</h1>
+          <!-- leading-snug help us to create a line difference between the same text if the text occupying the 2 or more line  -->
+          <p class="text-lg mt-4 sm:text-xl sm:mt-6 text-gray-800">Take you web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+
+        <!-- hero-button -->
+          <div id="button-container" class="mt-12 flex gap-4 flex-col sm:flex-row">
+            <button class="bg-primary text-white  rounded-lg px-8 py-3 font-semibold shadow-sm hover:bg-opacity-90  ">Download now</button>
+            <button class="bg-white rounded-lg  px-8 py-3 font-semibold border border-gray-400 hover:border-gray-800">Read Docs</button>
+          </div>
+          
         </div>
        </div>
      </main>
