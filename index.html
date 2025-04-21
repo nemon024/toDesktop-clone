@@ -323,6 +323,7 @@
  
     
        </div>
+       
        <!-- Step by step -->
         <div id="steps" class="flex flex-col gap-6 container">
           <h2 class="text-5xl sm:font-semibold mb-14">How it works</h2>
@@ -536,8 +537,9 @@
             <h2 class="text-5xl sm:font-semibold mb-14">Customer stories</h2>
 
             <div class="flex flex-col lg:flex-row justify-between gap-4 mt-6">
-              <div class="rounded-2xl gradient-hover-outer group">
-                <div class="rounded-2xl p-6 gradient-hover-inner flex flex-col gap-6">
+              <!-- 1st storie -->
+              <div class="rounded-2xl flex flex-col gradient-hover-outer group">
+                <div class="rounded-2xl p-6 gradient-hover-inner flex flex-col flex-1 gap-6">
                   <div class="flex p-6 items-center gap-4">
                     <div class="w-12 h-12 bg-blue-200 flex items-center justify-center rounded-full">
                       <i class="fa-solid fa-code text-indigo-800"></i>
@@ -563,7 +565,7 @@
                 </div>
 
               </div>
-
+              <!-- 2nd storie -->
               <div class="rounded-2xl gradient-hover-outer group">
                 <div class="rounded-2xl p-6 gradient-hover-inner flex flex-col gap-6">
                   <div class="flex p-6 items-center gap-4">
@@ -591,9 +593,9 @@
                 </div>
 
               </div>
-
-              <div class="rounded-2xl gradient-hover-outer group">
-                <div class="rounded-2xl p-6 gradient-hover-inner flex flex-col gap-6">
+              <!-- 3rd storie -->
+              <div class="rounded-2xl gradient-hover-outer flex flex-col group">
+                <div class="rounded-2xl p-6 gradient-hover-inner flex flex-col flex-1 gap-6">
                   <div class="flex p-6 items-center gap-4">
                     <div class="w-12 h-12 bg-blue-200 flex items-center justify-center rounded-full">
                       <i class="fa-solid fa-infinity text-indigo-800"></i>
@@ -621,7 +623,28 @@
               </div>
 
             </div>
+
+            <!-- section start -->
+             <!-- right part -->
+            <div class="rounded-xl flex flex-col bg-black lg:flex-row mt-16 pt-6 lg:pt-10 ">
+              <div class="flex flex-col gap-4 p-8 lg:flex-1 lg:gap-8">
+                <span class="text-gray-400 font-display font-medium">Ready to start building?</span>
+                <h2 class="text-4xl text-white leading-tight lg:text-5xl">Create your desktop app for free*</h2>
+                <p class="text-lg font-light text-gray-400 lg:text-xl">ToDesktop Builder will take you step-by-step through the process of creating your first desktop app in just a few minutes.</p>
+                <button class="bg-primary text-white py-3 rounded-lg hover:bg-opacity-90 flex  justify-center items-center gap-4">
+                  <i class="fa-solid fa-download"></i>
+                  <span>Download toDesktop Builder</span>
+                </button>
+                <p class="text-gray-400 text-xs italic leading-tight ">*You can create a desktop app and run it on your computer for free. You will only be charged if you want to create a distributable app for your customers.</p>
+              </div>
+              <!-- right-part -->
+              <div class="overflow-hidden rounded-2xl lg:w-1/2">
+                <img src="./assets/asset 20.png" class="block transform translate-x-6 translate-y-6 object-cover">
+              </div>
+            </div>
           </div>
+
+         
        <div class="h-[1000px]"></div>
      </main>
   </body>
