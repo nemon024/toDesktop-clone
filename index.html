@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <title>Tailwind Project</title>
     <link rel="stylesheet" href="output.css" />
@@ -327,7 +327,7 @@
       <!-- Step by step -->
       <div id="steps" class="flex flex-col gap-6 container">
           <h2 class="text-5xl sm:font-semibold mb-14">How it works</h2>
-          <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+          <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row justify-between">
             <!-- left or up part -->
             <div class="flex flex-col gap-6 lg:w-1/2">
               <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step 1</span>
@@ -363,9 +363,8 @@
               <img src="assets/asset 34.svg" alt="">
             </div>
           </div>
-
           <!-- step 2 -->
-          <div id="step2" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+          <div id="step2" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row justify-between">
             <!-- left or up part -->
             <div class="flex flex-col gap-6 lg:w-1/2">
               <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step 2</span>
@@ -410,7 +409,7 @@
             </div>
           </div>
           <!-- step 3 -->
-          <div id="step3" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+          <div id="step3" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row justify-between">
             <!-- left or up part -->
             <div class="flex flex-col gap-6 lg:w-1/2">
               <span class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step 3</span>
@@ -901,7 +900,32 @@
       </div>
 
     </main>
-    
+    <!-- Footer -->
+    <footer class="container">
+      <div class="rounded-lg border lg:border-none lg:bg-gray-50 bg-gray-50 flex flex-col lg:flex-row-reverse items-center px-8 py-12 gap-8">
+        <a href="#" class="font-light font-display">Documentation</a> 
+        <div class="flex gap-8 text-lg">
+          <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="#" id="brand" class="flex gap-2 items-center flex-1 ">
+          <img
+            class="object-cover max-w-12 max-h-12"
+            src="./assets/asset 0.png"
+            alt="logo"
+          />
+          <span class="text-lg font-medium font-display">ToDesktop</span>
+        </a>
+      </div>
+      <!--Sub footer  -->
+      <div id="sub-footer" class="flex flex-col items-center justify-center my-12 gap-6">
+        <div class="flex gap-2 items-center">
+          <img class="w-4 h-4" src="./assets/asset 21.svg" alt="">
+          <p class="text-sm text-gray-600 ">A Y Combinator company</p>
+        </div>
+        <p class="text-sm text-gray-400">© 2025 ToDesktop, Inc. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>
